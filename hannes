@@ -1,0 +1,64 @@
+ <body>
+    <!--div id="grid"></div-->
+    <div id="wrapper">
+      <header role="banner">
+        <nav>
+          <h1><a href="/">Henrik Nygren—Design</a></h1>
+          <a class="toggle-menu expand-menu open" href="#toggle-menu">
+            <span class="plus"></span>
+            <span class="minus"></span>
+          </a>
+          <div class="togglable expand-menu open">
+            <ul class="main">
+              <li>
+                <a class=" active" href="/">Projekt</a>
+              </li>
+              <li>
+                <a class="" href="/information/office/">Information</a>
+              </li>
+            </ul>
+            <ul class="sub">
+              <li class="initial ">
+                <ul>
+                  <li>
+                    <a class="active" href="/">1991–2016</a>
+                  </li>
+                  <li>
+                    <a class="" href="/a-o/">A–Ö</a>
+                  </li>
+                  <li>
+                    <a class="" href="/ongoing-projects/">Pågående</a>
+                  </li>
+                  <li>
+                    <form id="search_form" action="/search/" method="get">
+                      <label for="search_query">Sök</label>
+                      <input type="text" name="q" id="search_query" value="" autocorrect="off" autocapitalize="off" autocomplete="off" spellcheck="false" />
+                    </form>
+                  </li>
+                </ul>
+              </li>
+              <li class="hidden">
+                <ul>
+                  <li>
+                    <a class="" href="/information/office/">Kontor</a>
+                  </li>
+                  <li>
+                    <a class="" href="/information/staff/">Medarbetare</a>
+                  </li>
+                  <li>
+                    <a class="" href="/information/news/">Nyheter</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="lang">
+              <li>
+                <a class="active" href="/">Svenska</a>
+              </li>
+              <li>
+                <a class="" href="/en/">English</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
