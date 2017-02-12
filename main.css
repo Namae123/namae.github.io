@@ -25,9 +25,15 @@ font : nimbus-sans, sans-serif;
 vertical-align : baseline;
 }
 
-h1 {
-  font-family: nimbus-sans, sans-serif;
-  font-size: 21px;
+span,em {
+
+  font-style:normal;
+}
+
+
+h1{
+
+  font-size: 30px;
   font-style: normal;
 }
 
@@ -37,27 +43,11 @@ display : block;
 
 body {
 line-height : 1;
+font-family:nimbus-sans, sans-serif;
 }
 
 ol, ul {
 list-style : none;
-}
-
-blockquote, q {
-quotes : none;
-}
-
-blockquote:before, blockquote:after, q:before, q:after {
-content : '';
-content : none;
-}
-
-ins {
-text-decoration : none;
-}
-
-del {
-text-decoration : line-through;
 }
 
 table {
@@ -71,11 +61,7 @@ margin : 0;
 
 html, body {
 height : 100%;
-}
 
-button::-moz-focus-inner {
-border : 0;
-padding : 0;
 }
 
 input {
@@ -89,13 +75,14 @@ box-sizing : border-box;
 body {
 font-family : nimbus-sans, sans-serif;
 font-size : 15px;
-line-height : 18px;
+line-height : 25px;
 }
 
 @media only screen and (min-width:1px) and (max-width:591px) {
 body {
 font-size : 15px;
 line-height : 18px;
+font-family:nimbus-sans, sans-serif;
 }
 }
 
@@ -103,11 +90,7 @@ article p, article h1, article h2 {
 font-family :  nimbus-sans, sans-serif;
 }
 
-button, input[type="text"] {
-font-family :  nimbus-sans, sans-serif;
-font-size : 15px;
-line-height : 18px;
-}
+
 
 @media only screen and (min-width:1px) and (max-width:591px) {
 button, input[type="text"] {
@@ -119,14 +102,7 @@ line-height : 18px;
 a {
 text-decoration : none;
 color : black;
-}
-
-html.no-touch a:hover {
-color : red;
-}
-
-a.active {
-font-family:  nimbus-sans, sans-serif;
+font-family :  nimbus-sans, sans-serif;
 }
 
 p, h2 {
@@ -134,65 +110,18 @@ padding-bottom : 18px;
 }
 
 p.file, h2.file {
-font-family :  nimbus-sans, sans-serif;
+
 padding-top : 18px;
 }
 
 p em, h2 em {
-font-family :  nimbus-sans, sans-serif;
+font :  nimbus-sans, sans-serif;
 }
 
-@media only screen and (min-width:1px) and (max-width:591px) {
-p, h2 {
-padding-bottom : 18px;
-}
 
 p.file, h2.file {
 padding-top : 18px;
 }
-}
-
-div#spinner {
-position : fixed;
-z-index : 10;
-top : 0;
-left : 0;
-width : 100%;
-height : 100%;
-display : block;
-background : black;
-}
-
-div#spinner:after {
-content : "";
-width : 95px;
-height : 91px;
-display : block;
-position : absolute;
-top : 50%;
-left : 50%;
-margin-left : -48px;
-margin-top : -46px;
-background : url(../img/preloader@2x.gif) center center no-repeat black;
-background-size : 95px 91px;
-}
-
-div#spinner.slim {
-background : transparent;
-}
-
-div#spinner.slim:after {
-width : 78px;
-height : 78px;
-margin-left : -39px;
-margin-top : -39px;
-background : url(../img/preloader-new@2x.gif) center center no-repeat black;
-background-size : 60px 60px;
-border-radius : 78px;
-border-top-left-radius : 78px;
-border-top-right-radius : 78px;
-border-bottom-left-radius : 78px;
-border-bottom-right-radius : 78px;
 }
 
 @media (max-width:767px) {
@@ -201,24 +130,6 @@ width : 100%;
 }
 }
 
-
-@media only screen and (min-width:972px) and (max-width:1260px) {
-article#grid h2.search-result {
-padding-left : 16px;
-}
-}
-
-@media only screen and (min-width:592px) and (max-width:972px) {
-article#grid h2.search-result {
-padding-left : 16px;
-}
-}
-
-@media only screen and (min-width:1px) and (max-width:591px) {
-article#grid h2.search-result {
-padding-left : 16px;
-}
-}
 
 article#grid ul {
 width : 100%;
@@ -306,6 +217,7 @@ height : 100%;
 
 article#grid ul li a:hover > span {
 opacity : 1;
+
 }
 
 html.touch article#grid ul li a:hover > span {
@@ -328,16 +240,19 @@ width : 102%;
 height : 102%;
 padding-top : 2px;
 padding-left : 2px;
-font-family:nimbus-sans, sans-serif;
+
 }
 
 article#grid ul li a span em {
 width : 100%;
 display : block;
+
+
 }
 
 article#grid ul li a span em.title {
 padding-bottom : 10px;
+
 }
 
 article#grid-list:before, article#grid-list:after {
@@ -403,9 +318,7 @@ width : 272px;
 height: 272px;
 }
 
-article#grid-list ul li span a {
-cursor : text;
-}
+
 
 @media only screen and (min-width:1px) and (max-width:591px) {
 article#grid-list ul li span a {
@@ -428,35 +341,23 @@ position : relative;
 width : 100%;
 float : left;
 padding-bottom : 60px;
-line-height : 21px;
+line-height : 60px;
 }
 
 header[role="banner"] nav h1 {
 float : left;
-height:21px;
-}
-
-header[role="banner"] nav h1 a:hover {
-color : black;
 }
 
 
 header[role="banner"] nav h1, header[role="banner"] nav ul {
-width : 288px;
-height : 35px;
+width : 250px;
+
 }
 
 header[role="banner"] nav ul {
-float : left;
+float : right;
 }
 
-header[role="banner"] nav ul li {
-float : left;
-}
-
-header[role="banner"] nav ul li.hidden {
-display : none;
-}
 
 header[role="banner"] nav ul li:after {
 padding : 0 4px;
@@ -468,15 +369,6 @@ content : "";
 padding : 0;
 }
 
-header[role="banner"] nav ul li a {
-display : inline-block;
-}
-
-header[role="banner"] nav ul li form {
-float : left;
-position : relative;
-height : 18px;
-}
 
 @media only screen and (min-width:1px) and (max-width:591px) {
 header[role="banner"] nav ul li form {
@@ -484,39 +376,11 @@ height : 18px;
 }
 }
 
-header[role="banner"] nav ul li form label {
-position : absolute;
-top : 0;
-height : 21px;
-line-height : 21px;
-display : block;
-}
-
-header[role="banner"] nav ul li form input[type="text"] {
-position : absolute;
-z-index : 1;
-left : 0;
-top : 0;
-padding : 0;
-border : none;
-outline : none;
-height : 21px;
-line-height : 21px;
-background : transparent;
-}
-
-html.ffox header[role="banner"] nav ul li form input[type="text"] {
-top : 0;
-}
-
-header[role="banner"] nav ul li form input[type="text"].active {
-color : red;
-}
 
 @media only screen and (min-width:1px) and (max-width:591px) {
 header[role="banner"] nav ul li form input[type="text"] {
-height : 35px;
-line-height : 35px;
+height : 21px;
+line-height : 21px;
 width : 62px;
 }
 }
@@ -545,30 +409,13 @@ width : 170px;
 }
 }
 
-header[role="banner"] nav ul.lang {
-float : right;
-width : auto;
-}
+
 
 @media only screen and (min-width:592px) and (max-width:1260px) {
 header[role="banner"] nav a.toggle-menu {
 display : block;
 }
 
-header[role="banner"] nav .togglable {
-margin-left : 288px;
-min-height : 17px;
-max-height : 17px;
-overflow : hidden;
-}
-
-header[role="banner"] nav .togglable.open {
-max-height : 150px;
-}
-
-header[role="banner"] nav .togglable.open ul.sub, header[role="banner"] nav .togglable.open ul.lang {
-display : block;
-}
 
 header[role="banner"] nav ul.sub, header[role="banner"] nav ul.lang {
 clear : both;
@@ -596,7 +443,6 @@ max-height : 160px;
 
 header[role="banner"] nav h1 {
 width : auto;
-
 }
 
 header[role="banner"] nav ul {
@@ -716,21 +562,10 @@ display : block;
 
 article#project ul.gallery li img {
 width : 100%;
-
 float : left;
 cursor : pointer;
 }
-article#project div.gallery-takeover {
-position : fixed;
-top : 0;
-left : 0;
-width : 100%;
-height : 100%;
-background : red;
-background : url(/site/templates/img/loader@2x.gif) center center no-repeat black;
-background-size
-z-index : 6;
-}
+
 
 article#project div.gallery-takeover.hidden {
 display : none;
@@ -755,23 +590,7 @@ article#project div.gallery-takeover a.close.show {
 opacity : 1;
 }
 
-article#project div.gallery-takeover a.close span {
-position : absolute;
-top : 44px;
-left : 62px;
-background : url(/site/templates/img/assets@2x.png) 0 -20px no-repeat;
-background-size : 100%;
-width : 10px;
-height : 10px;
-}
 
-article#project div.gallery-takeover div.image {
-width : 100%;
-height : 100%;
-background-repeat : no-repeat;
-background-position : center center;
-background-size : contain;
-}
 
 article#project div.gallery-takeover div.image a {
 overflow : hidden;
@@ -859,11 +678,13 @@ display : none !important ;
 html {
 min-height : 1px;
 background : white;
+
 }
 
 body {
 overflow-y : scroll;
 height : auto;
+
 }
 
 body.disabled-scroll {
@@ -877,7 +698,7 @@ top : 0;
 left : 0;
 z-index : 5;
 width : 100%;
-height : 10px;
+height : 44px;
 background : white;
 content : "";
 }
@@ -906,7 +727,7 @@ bottom : 0;
 left : 0;
 z-index : 5;
 width : 100%;
-height : 10px;
+height : 44px;
 background : white;
 content : "";
 }
@@ -932,7 +753,7 @@ display : none;
 body div#wrapper {
 margin : 0 auto;
 min-height : 100%;
-padding : 44px 0;
+padding : 50px 0;
 }
 
 @media only screen and (min-width:1548px) and (max-width:9999px) {
@@ -1007,32 +828,6 @@ width : 272px;
 }
 }
 
-body div.chrome-frame {
-position : fixed;
-top : 0;
-left : 0;
-z-index : 40;
-width : 100%;
-height : 100%;
-background : white;
-padding : 20px;
-}
-
-body div.chrome-frame p {
-padding-bottom : 0;
-}
-
-body div.chrome-frame p a {
-color : red;
-}
-
-body div.chrome-frame p a:hover {
-color : black;
-}
-
-body div.chrome-frame p.em {
-padding-bottom : 18px;
-}
 
 body div#grid {
 position : fixed;
@@ -1041,34 +836,4 @@ top : 0;
 left : 0;
 width : 100%;
 height : 100%;
-}
-
-@media only screen and (min-width:1548px) and (max-width:9999px) {
-body div#grid {
-background : url(/site/templates/img/grid-5.png) top center no-repeat;
-}
-}
-
-@media only screen and (min-width:1260px) and (max-width:1548px) {
-body div#grid {
-background : url(/site/templates/img/grid-4.png) top center no-repeat;
-}
-}
-
-@media only screen and (min-width:972px) and (max-width:1260px) {
-body div#grid {
-background : url(/site/templates/img/grid-3.png) top center no-repeat;
-}
-}
-
-@media only screen and (min-width:592px) and (max-width:972px) {
-body div#grid {
-background : url(/site/templates/img/grid-2.png) top center no-repeat;
-}
-}
-
-@media only screen and (min-width:1px) and (max-width:591px) {
-body div#grid {
-background : url(/site/templates/img/grid-1.png) top center no-repeat;
-}
 }
