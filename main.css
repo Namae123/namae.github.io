@@ -241,6 +241,27 @@ height : 102%;
 padding-top : 2px;
 padding-left : 2px;
 
+-moz-transition-property: opacity;
+-webkit-transition-property: opacity;
+-o-transition-property: opacity;
+-ms-transition-property: opacity;
+-transition-property: opacity;
+-moz-transition-duration: 1s;
+-webkit-transition-duration: 1s;
+-o-transition-duration: 1s;
+-ms-transition-duration: 1s;
+-transition-duration: 0.55s;
+-moz-transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+-webkit-transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+-o-transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+-ms-transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+-transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+-moz-transition-delay: 0.03s;
+-webkit-transition-delay: 0.03s;
+-o-transition-delay: 0.03s;
+-ms-transition-delay: 0.03s;
+-transition-delay: 0.03s;
+
 }
 
 article#grid ul li a span em {
